@@ -262,7 +262,7 @@
                     },
 
                     handleTab: function($dialog, ev, backward) {
-                        if(document.activeElement.tagName.indexOf('MD-TAB') !== -1 && document.activeElement.tagName.indexOf('MD-DUMMY') !== -1)
+                        if(document.activeElement.tagName.indexOf('MD-TAB') !== -1 || document.activeElement.tagName.indexOf('MD-DUMMY') !== -1)
                                 return;
 
                         var focusableElements = privateMethods.getFocusableElements($dialog);
